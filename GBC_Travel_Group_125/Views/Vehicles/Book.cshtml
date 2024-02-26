@@ -1,0 +1,47 @@
+﻿@model GBC_Travel_Group_125.Models.Vehicles
+
+@{
+    ViewData["Title"] = "Book Vehicle";
+}
+
+<h2>Book Vehicle</h2>
+
+<!-- Display vehicle details for confirmation -->
+<div>
+    <h3>Are you sure you want to book this vehicle?</h3>
+    <dl class="row">
+        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.VehicleName)</dt>
+        <dd class="col-sm-8">@Html.DisplayFor(model => model.VehicleName)</dd>
+
+        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.VehicleType)</dt>
+        <dd class="col-sm-8">@Html.DisplayFor(model => model.VehicleType)</dd>
+
+        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Location)</dt>
+        <dd class="col-sm-8">@Html.DisplayFor(model => model.Location)</dd>
+
+        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.PhoneNumber)</dt>
+        <dd class="col-sm-8">@Html.DisplayFor(model => model.PhoneNumber)</dd>
+
+        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Model)</dt>
+        <dd class="col-sm-8">@Html.DisplayFor(model => model.Model)</dd>
+
+        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Color)</dt>
+        <dd class="col-sm-8">@Html.DisplayFor(model => model.Color)</dd>
+
+        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.MaxCapacity)</dt>
+        <dd class="col-sm-8">@Html.DisplayFor(model => model.MaxCapacity)</dd>
+
+        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Price)</dt>
+        <dd class="col-sm-8">@Html.DisplayFor(model => model.Price)</dd>
+
+        <dt class="col-sm-4">@Html.DisplayNameFor(model => model.Availability)</dt>
+        <dd class="col-sm-8">@Html.DisplayFor(model => model.Availability)</dd>
+    </dl>
+</div>
+
+<!-- Form to submit the booking request -->
+<form asp-action="ConfirmBooking" method="post">
+    <input type="hidden" asp-for="VehicleId" />
+    <button type="submit" class="btn btn-primary">Confirm Booking</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>

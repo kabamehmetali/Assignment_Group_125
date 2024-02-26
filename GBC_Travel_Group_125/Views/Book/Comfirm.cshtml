@@ -1,0 +1,29 @@
+﻿@model GBC_Travel_Group_125.Models.Booking
+
+@{
+    ViewData["Title"] = "Confirm Booking";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <h4>Booking Confirmation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>Booking Date</dt>
+        <dd>@Model.BookingDate.ToString("d")</dd>
+
+        <dt>Booking Type</dt>
+        <dd>@Model.BookingType</dd> @* Display the booking type description based on your logic *@
+
+        @* Display vehicle details. Assuming you have vehicle information in your booking model. *@
+        <dt>Vehicle</dt>
+        <dd>@Model.Vehicle.VehicleName</dd> @* Replace with actual navigation property if different *@
+    </dl>
+</div>
+
+<form asp-action="ConfirmBooking" method="post">
+    <input type="hidden" asp-for="BookingId" />
+    <button type="submit" class="btn btn-success">Confirm Booking</button>
+    <a asp-action="Index" class="btn btn-info">Cancel</a>
+</form>

@@ -1,0 +1,132 @@
+﻿@model IEnumerable<GBC_Travel_Group_125.Models.Vehicles>
+@{
+    ViewData["Title"] = "Vehicles";
+    int currentPage = (int)(ViewData["CurrentPage"] ?? 1);
+    int totalPages = (int)(ViewData["TotalPages"] ?? 1);
+    string searchQuery = (string)(ViewData["SearchQuery"] ?? "");
+}
+
+<div class="bg-light">
+    <div class="container">
+        @Html.Partial("_SearchBar.cshtml")
+    </div>
+
+    <div class="container mt-3">
+        <h2>@ViewData["Title"]</h2>
+        <a asp-action="Create" class="btn btn-primary">Add New Vehicle</a>
+        <br />
+        @if (!Model.Any())
+        {
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="alert alert-info" role="alert">
+                No vehicles Found!
+                <br /><br />
+                <a class="btn btn-primary" asp-controller="Vehicles" asp-action="Create">Add a Vehicle</a>
+            </div>
+            <br /><br />
+            <br />
+
+            <br />
+              <br /><br />
+            <br />
+
+            <br />
+            <br />
+
+            <br />
+        }
+        <div class="row">
+            @foreach (var vehicle in Model)
+            {
+                <div class="col-md-3 col-sm-4 mt-3 d-flex align-items-stretch">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" height="275" src="@Html.DisplayFor(modelItem => vehicle.VehicleImage )" alt="Card image cap">
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center">
+                                @{
+                                    var title = vehicle.VehicleName;
+                                    if (!string.IsNullOrEmpty(title) && title.Length > 20)
+                                    {
+                                        @title.Substring(0, 20) <text>...</text>
+                                    }
+                                    else
+                                    {
+                                        @title
+                                    }
+                                }
+                            </h5>
+                        
+                            <p class="card-text text-center">
+                                @{
+                                    var description = vehicle.VehicleDescription;
+                                    if (!string.IsNullOrEmpty(description) && description.Length > 100)
+                                    {
+                                        @description.Substring(0, 100) <text>...</text>
+                                    }
+                                    else
+                                    {
+                                        @description
+                                    }
+                                }
+                            </p>
+                            <ul class="list-group list-group-flush mt-auto">
+                                <li class="list-group-item">
+                                    Location: <b>
+                                        @{
+                                            var location = vehicle.Location;
+                                            if (!string.IsNullOrEmpty(location) && location.Length > 15)
+                                            {
+                                                @location.Substring(0, 15) <text>...</text>
+                                            }
+                                            else
+                                            {
+                                                @location
+                                            }
+                                        }
+                                    </b>
+                                </li>
+                                <li class="list-group-item">
+                                    Max Capacity: <b>
+                                        @vehicle.MaxCapacity
+                                    </b>
+                                </li>
+                                <li class="list-group-item">
+                                    Price: <b class="text-success">
+                                        $@vehicle.Price.ToString("N2")
+                                    </b> <span style="font-size: 12px;">Per Hour</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-footer mt-auto">
+                            <a asp-action="Details" asp-route-id="@vehicle.VehicleId" class="btn btn-warning">More Details</a>
+                            @if (vehicle.Availability)
+                            {
+                                <a href="@Url.Action("Book", "Vehicles", new { id = vehicle.VehicleId })" class="btn btn-primary">Book</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        
+        @* Pagination Controls *@
+        <nav aria-label="Vehicle Pagination" class="mt-4">
+            <ul class="pagination justify-content-center">
+                @for (int i = 1; i <= totalPages; i++)
+                {
+                    <li class="page-item @(i == currentPage ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("Index", new { page = i, searchQuery = searchQuery })">@i</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+        <br />
+        <br />
+    </div>
+</div>

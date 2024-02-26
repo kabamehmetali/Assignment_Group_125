@@ -1,0 +1,34 @@
+﻿@model IEnumerable<GBC_Travel_Group_125.Models.Events>
+
+@{
+    ViewData["Title"] = "Events";
+}
+
+
+<div class="bg-light">
+    <div class="container">
+        @Html.Partial("_SearchBar.cshtml")
+    </div>
+</div>
+<h2>@ViewData["Title"]</h2>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="@(!string.IsNullOrEmpty(item.EventImage) ? Url.Content(item.EventImage) : Url.Content("~/images/login.jpg"))" alt="Event Image">
+                <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.EventName)</h5>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.EventDescription)</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="@Url.Action("Details", "Events", new { id = item.EventId })" class="btn btn-sm btn-outline-secondary">View</a>
+                            <a href="@Url.Action("Edit", "Events", new { id = item.EventId })" class="btn btn-sm btn-outline-secondary">Edit</a>
+                        </div>
+                        <small class="text-muted">@item.DateStart.ToString("dd MMM yyyy") - @item.DateEnd.ToString("dd MMM yyyy")</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

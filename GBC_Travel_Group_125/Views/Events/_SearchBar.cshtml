@@ -1,0 +1,224 @@
+﻿
+<nav class="p-4">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+       <!--  <button class="nav-link " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="false"><i class="fa-solid fa-plane"></i> Flights</button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-hotel"></i> Stays</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa-solid fa-car"></i> Vehicles</button> -->
+        <button class="nav-link active" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-events" type="button" role="tab" aria-controls="nav-events" aria-selected="true"><i class="fa-solid fa-parachute-box"></i> Events</button>
+
+    </div>
+</nav>
+<div class="tab-content tab-size" id="nav-tabContent">
+    <div class="tab-pane fade " id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+       
+
+       <form>
+           <div class="row mb-3">
+                <div class="col col-sm-12 col-lg-4">
+                    <label class="form-label">From: </label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-plane-departure"></i></span>
+                        <input type="text" class="form-control" placeholder="Departure airport" aria-label="From">
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-4">
+                    <label class="form-label">To: </label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-plane-arrival"></i></span>
+                        <input type="text" class="form-control" placeholder="Arrival airport" aria-label="To">
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-4">
+                    <label class="form-label">Trip Type: </label>
+                    <div class="input-group">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="tripType" id="oneWay" value="oneWay" checked>
+                            <label class="form-check-label" for="oneWay">One-way</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="tripType" id="roundTrip" value="roundTrip">
+                            <label class="form-check-label" for="roundTrip">Round-trip</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-2">
+                    <label class="form-label">Depart: </label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></span>
+                        <input type="date" class="form-control" placeholder="Departure date" aria-label="Depart">
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-2" id="returnDate">
+                    <label class="form-label">Return: </label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></span>
+                        <input type="date" class="form-control" placeholder="Return date" aria-label="Return">
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-2">
+                    <label class="form-label">Passengers: </label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-users"></i></span>
+                        <input type="number" class="form-control" value="1" min="1" aria-label="Passengers">
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-2">
+                    <label class="form-label">&nbsp;</label>
+                    <div class="input-group">
+                        <button type="submit" class="btn btn-primary"> <i class="fa-solid fa-search"></i> <b>SEARCH</b> </button>
+                    </div>
+                </div>
+           </div>
+       </form>
+
+
+    <br /><br />
+
+     </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+   
+           
+            <form>
+                <div class="row mb-3">
+                    <div class="col col-sm-12 col-lg-4">
+                        <label class="form-label">Location: </label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="Going-to"><i class="fa-solid fa-location-dot"></i></span>
+                            <input type="text" class="form-control" placeholder="Going to" aria-label="Going to" aria-describedby="Going-to">
+                        </div>
+                    </div>
+                    <div class="col col-sm-12 col-lg-2">
+                        <label class="form-label">From: </label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="From"><i class="fa-solid fa-calendar-days"></i></span>
+                            <input type="date" class="form-control" placeholder="Dates" aria-label="Dates" aria-describedby="From" placeholder="From">
+                        </div>
+                    </div>
+                    <div class="col col-sm-12 col-lg-2">
+                        <label class="form-label">To: </label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="To"><i class="fa-solid fa-calendar-days"></i></span>
+                            <input type="date" class="form-control" placeholder="Dates" aria-label="Dates" aria-describedby="To" placeholder="To">
+                        </div>
+                    </div>
+                  <div class="col col-sm-12 col-lg-2">
+                        <label class="form-label">People: </label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="NoofPeople"><i class="fa-solid fa-users"></i></span>
+                            <input type="number" class="form-control" value="1" aria-label="Dates" aria-describedby="To" placeholder="To" min="1" width="12">
+                        </div>
+                       
+                    </div>
+                   
+                    <div class="col col-sm-12 col-lg-2">
+                        <label class="form-label">&nbsp</label>
+                         <div class="input-group">
+                        <button type="submit" class="btn btn-primary btn"> <i class="fa-solid fa-search"> </i> <b>SEARCH</b> </button>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+            </form>
+            <br />
+            <br />     
+        </div>
+        
+
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+
+
+        <form>
+            <div class="row mb-3">
+                <div class="col col-sm-12 col-lg-4">
+                    <label class="form-label">Place: </label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="Going-to"><i class="fa-solid fa-location-dot"></i></span>
+                        <input type="text" class="form-control" placeholder="Location" aria-label="Going to" aria-describedby="Going-to">
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-2">
+                    <label class="form-label">From: </label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="From"><i class="fa-solid fa-calendar-days"></i></span>
+                        <input type="date" class="form-control" placeholder="Dates" aria-label="Dates" aria-describedby="From" placeholder="From">
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-2">
+                    <label class="form-label">To: </label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="To"><i class="fa-solid fa-calendar-days"></i></span>
+                        <input type="date" class="form-control" placeholder="Dates" aria-label="Dates" aria-describedby="To" placeholder="To">
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-2">
+                    <label class="form-label">Vehicle: </label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="NoofPeople"><i class="fa-solid fa-car"></i></span>
+                        <select class="form-select">
+                            <option>Bicycle</option>
+                            <option>Motorcycle</option>
+                            <option>Limousine</option>
+                            <option>Card</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="col col-sm-12 col-lg-2">
+                    <label class="form-label">&nbsp</label>
+                    <div class="input-group">
+                        <button type="submit" class="btn btn-primary btn"> <i class="fa-solid fa-search"> </i> <b>SEARCH</b> </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+        <br /> <br />
+    </div>
+    <div class="tab-pane fade show active" id="nav-events" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+
+        <form>
+            <div class="row mb-3">
+                <div class="col col-sm-12 col-lg-4">
+                    <label class="form-label">Location: </label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="Going-to"><i class="fa-solid fa-location-dot"></i></span>
+                        <input type="text" class="form-control" placeholder="Going to" aria-label="Going to" aria-describedby="Going-to">
+                    </div>
+                </div>
+                <div class="col col-sm-12 col-lg-3">
+                    <label class="form-label">Date: </label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="From"><i class="fa-solid fa-calendar-days"></i></span>
+                        <input type="date" class="form-control" placeholder="Dates" aria-label="Dates" aria-describedby="From" placeholder="From">
+                    </div>
+                </div>
+             
+                <div class="col col-sm-12 col-lg-2">
+                    <label class="form-label">Tickets: </label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="NoofPeople"><i class="fa-solid fa-users"></i></span>
+                        <input type="number" class="form-control" value="1" aria-label="Dates" aria-describedby="To" placeholder="To" min="1" width="12">
+                    </div>
+
+                </div>
+
+                <div class="col col-sm-12 col-lg-2">
+                    <label class="form-label">&nbsp</label>
+                    <div class="input-group">
+                        <button type="submit" class="btn btn-primary btn"> <i class="fa-solid fa-search"> </i> <b>SEARCH</b> </button>
+                    </div>
+
+                </div>
+
+            </div>
+        </form>
+        <br />
+        <br />
+    </div>
+
+</div>
+

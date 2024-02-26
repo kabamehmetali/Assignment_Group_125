@@ -1,0 +1,60 @@
+﻿@model GBC_Travel_Group_125.Models.Stays
+
+@{
+    ViewData["Title"] = "Stay Details";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Hotel Image and Details -->
+        <div class="col-md-6">
+            @if (Model.HotelImage != null)
+            {
+                <img src="@Url.Content(Model.HotelImage)" class="img-fluid" alt="Hotel Image" style="height: 100%; width: 100%; object-fit: cover;" />
+            }
+            else
+            {
+                <img src="path/to/default/hotel/image" class="img-fluid" alt="Default Hotel Image" style="height: 100%; width: 100%; object-fit: cover;" />
+            }
+        </div>
+        <div class="col-md-6">
+            <div class="h-100 d-flex flex-column justify-content-between">
+                <div class="border rounded p-2">
+                    <h3 class="mt-2">@Model.HotelName</h3>
+                    <hr style="border-color: black !important;" />
+                    <p>Location: <strong>@Model.HotelLocation</strong></p>
+                    <p>Maximum Rooms: <strong>@Model.MaximumRoom</strong></p>
+                    <p>Phone Number: <strong>@Model.PhoneNumber</strong></p>
+                    <!-- Add more details as required -->
+                </div>
+                <div class="mt-3">
+                    <a asp-action="Edit" asp-route-id="@Model.StayId" class="btn btn-primary">Edit</a>
+                    <!-- Consider adding Delete functionality if applicable -->
+                    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   @*  <!-- Additional Hotel Details or Description -->
+    <div class="row mt-4">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    Description or Additional Details
+                </div>
+                <div class="card-body">
+                    <!-- You can add a property in your model for description if needed -->
+                    <p>@Html.DisplayFor(model => model.)</p>
+                </div>
+            </div>
+        </div>
+    </div> *@
+    
+</div>
+<br />
+<br />
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

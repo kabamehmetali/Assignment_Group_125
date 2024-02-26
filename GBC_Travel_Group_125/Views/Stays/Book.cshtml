@@ -1,0 +1,30 @@
+﻿@model GBC_Travel_Group_125.Models.Stays
+
+@{
+    ViewData["Title"] = "Book Flight";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="container mt-4">
+    <h3>Are you sure you want to Book this flight?</h3>
+    <div>
+        <h4>Flight</h4>
+        <hr />
+        <dl class="row">
+            <dl class="row">
+                <dt class="col-sm-4">@Html.DisplayNameFor(model => model.HotelName)</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.HotelName)</dd>
+
+                <!-- Add more details as needed -->
+            </dl>
+        </dl>
+    </div>
+    <form asp-action="Booking" method="post">
+        <input type="hidden" asp-for="StayId" />
+
+        <a asp-action="Index" class="btn btn-primary">Book</a>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+
+</div>

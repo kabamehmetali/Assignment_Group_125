@@ -1,0 +1,66 @@
+﻿@model IEnumerable<GBC_Travel_Group_125.Models.Vehicles>
+@{
+    ViewData["Title"] = "Search Results";
+    int currentPage = (int)(ViewData["CurrentPage"] ?? 1);
+    int totalPages = (int)(ViewData["TotalPages"] ?? 1);
+}
+
+<div class="bg-light">
+    <div class="container">
+        @Html.Partial("_SearchBar.cshtml")
+    </div>
+
+    <div class="container mt-3">
+        <h2>@ViewData["Title"]</h2>
+        @if (!Model.Any())
+        {
+            <div class="alert alert-info" role="alert">
+                No vehicles match your search criteria.
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                @foreach (var vehicle in Model)
+                {
+                    <div class="col-md-3 col-sm-4 mt-3 d-flex align-items-stretch">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" height="275" src="@vehicle.VehicleImage" alt="Vehicle Image">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title text-center">@vehicle.VehicleName</h5>
+                                <p class="card-text text-center">@vehicle.VehicleDescription</p>
+                                <ul class="list-group list-group-flush mt-auto">
+                                    <li class="list-group-item">Location:<b> @vehicle.Location</b></li>
+                                    <li class="list-group-item">Max Capacity: <b>@vehicle.MaxCapacity</b></li>
+                                    <li class="list-group-item">Price: <b class="text-success">$@vehicle.Price</b><span style="font-size: 12px;"> per hour</span></li>
+                                    <li class="list-group-item">Availability: <b> @(vehicle.Availability ? "Yes" : "No")</b></li>
+                                </ul>
+                            </div>
+                            <div class="card-footer mt-auto">
+                                <a href="@Url.Action("Details", "Vehicles", new { id = vehicle.VehicleId })" class="btn btn-warning">More Details</a>
+                                @if (vehicle.Availability)
+                                {
+                                    <a href="@Url.Action("Book", "Vehicles", new { id = vehicle.VehicleId })" class="btn btn-primary">Book</a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+
+        @* Pagination Controls *@
+        <nav aria-label="Vehicle Pagination" class="mt-4">
+            <ul class="pagination justify-content-center">
+                @for (int i = 1; i <= totalPages; i++)
+                {
+                    <li class="page-item @(i == currentPage ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("Search", new { page = i /* Add other search parameters here as needed */ })">@i</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+        <br />
+        <br />
+    </div>
+</div>

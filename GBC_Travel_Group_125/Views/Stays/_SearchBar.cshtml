@@ -1,0 +1,39 @@
+﻿<nav class="p-4">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-hotel"></i> Stays</button>
+        <!-- Add other buttons for Vehicles and Events if needed -->
+    </div>
+</nav>
+<div class="tab-content tab-size" id="nav-tabContent">
+    <form asp-controller="Stays" asp-action="Index" method="get">
+        <div class="row mb-3">
+            <div class="col col-sm-12 col-lg-4">
+                <label class="form-label">Location: </label>
+                <div class="input-group">
+                    <span class="input-group-text" id="Going-to"><i class="fa-solid fa-location-dot"></i></span>
+                    <input type="text" class="form-control" name="location" placeholder="Search by Location" />
+                </div>
+            </div>
+            <div class="col col-sm-12 col-lg-4">
+                <label class="form-label">Hotel Name: </label>
+                <div class="input-group">
+                    <span class="input-group-text" id="HotelName"><i class="fa-solid fa-hotel"></i></span>
+                    <input type="text" class="form-control" name="hotelName" placeholder="Search by Hotel Name" />
+                </div>
+            </div>
+            <div class="col col-sm-12 col-lg-2">
+                <label class="form-label">Maximum Room: </label>
+                <div class="input-group">
+                    <span class="input-group-text" id="MaxRoom"><i class="fa-solid fa-door-closed"></i></span>
+                    <input type="number" class="form-control" name="maxRoom" placeholder="Maximum Room" min="1" />
+                </div>
+            </div>
+            <div class="col col-sm-12 col-lg-2">
+                <label class="form-label">&nbsp;</label>
+                <div class="input-group">
+                    <button type="submit" class="btn btn-primary"> <i class="fa-solid fa-search"></i> <b>SEARCH</b> </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

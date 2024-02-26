@@ -1,0 +1,9 @@
+.nav-link[b-uq06of1iwn] {
+    background-color: rebeccapurple !important;
+    color: white !important;
+}
+
+.nav-lik:hover[b-uq06of1iwn], .nav-link:focus[b-uq06of1iwn], navlink[b-uq06of1iwn]::selection{
+        background-color: goldenrod !important;
+        color: black !important;
+    }

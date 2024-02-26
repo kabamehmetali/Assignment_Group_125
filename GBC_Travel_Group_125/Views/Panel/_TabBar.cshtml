@@ -1,0 +1,16 @@
+﻿<div class="d-flex align-items-start">
+    <div class="nav flex-column nav-pills col-md-1 mt-5" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        
+        <button class="nav-link active mb-3" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+        <button class="nav-link mb-3" id="v-pills-Vehicle-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Vehicle" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Vehicle</button>
+        <button class="nav-link mb-3" id="v-pills-Events-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Events" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Events</button>
+        <button class="nav-link mb-3" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="tab-content col-md-11  mt-5" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+        <div class="tab-pane fade" id="v-pills-Vehicle" role="tabpanel" aria-labelledby="v-pills-Vehicle-tab">@Html.PartialAsync("Vehicle/AddVehicle.cshtml")</div>
+        <div class="tab-pane fade" id="v-pills-Events" role="tabpanel" aria-labelledby="v-pills-Events-tab">@Html.PartialAsync("Events/AddEvents.cshtml")</div>
+        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+    </div>
+</div>

@@ -1,0 +1,215 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GBC_Travel_Group_125
+build_property.RootNamespace = GBC_Travel_Group_125
+build_property.ProjectDir = C:\Users\kabam\OneDrive\Documents\GitHub\COMP2139-KABA\GBC_Travel_Group_125\GBC_Travel_Group_125\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\kabam\OneDrive\Documents\GitHub\COMP2139-KABA\GBC_Travel_Group_125\GBC_Travel_Group_125
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Book/Booking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xCb29raW5nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Book/Comfirm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDb21maXJtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Book/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Events/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Events/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Events/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Events/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Events/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Flights/Book.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xCb29rLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Flights/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Flights/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Flights/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Flights/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Flights/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Home/_AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Home/_PopularDestinations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUG9wdWxhckRlc3RpbmF0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Login/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Panel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFuZWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Shared/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9IZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Stays/Book.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RheXNcQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Stays/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RheXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Stays/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RheXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Stays/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RheXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Stays/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RheXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Stays/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RheXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Vehicles/Book.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcQm9vay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Vehicles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Vehicles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Vehicles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Vehicles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Vehicles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Vehicles/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Vehicles/_PopularVehicles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcX1BvcHVsYXJWZWhpY2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Events/_SearchBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRzXF9TZWFyY2hCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-rhlkujler9
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Flights/_SearchBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmxpZ2h0c1xfU2VhcmNoQmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-wzvpe0r8kh
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-2yc6mpn4xl
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Home/_SearchBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfU2VhcmNoQmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-7gyfk0wk26
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Panel/_TabBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFuZWxcX1RhYkJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-uq06of1iwn
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-vbzcydg8oh
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-kkqomq1rzo
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Stays/_SearchBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RheXNcX1NlYXJjaEJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-ml76pv2pcm
+
+[C:/Users/kabam/OneDrive/Documents/GitHub/COMP2139-KABA/GBC_Travel_Group_125/GBC_Travel_Group_125/Views/Vehicles/_SearchBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZXNcX1NlYXJjaEJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-imljrymyv3

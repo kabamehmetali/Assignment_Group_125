@@ -1,0 +1,59 @@
+﻿@model IEnumerable<GBC_Travel_Group_125.Models.Stays>
+
+@{
+    ViewData["Title"] = "Stays";
+}
+<div class="bg-light">
+
+    <div class="container">
+        @Html.Partial("_SearchBar")
+    </div>
+
+
+<div class="container mt-3">
+    <h2>@ViewData["Title"]</h2>
+
+    <a asp-action="Create" class="btn btn-primary mb-2">Create New Stay</a>
+
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().HotelName)</th>
+                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().MaximumRoom)</th>
+                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().HotelLocation)</th>
+                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().PhoneNumber)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.HotelName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.MaximumRoom)</td>
+                    <td>@Html.DisplayFor(modelItem => item.HotelLocation)</td>
+                    <td>@Html.DisplayFor(modelItem => item.PhoneNumber)</td>
+                    <td>
+                        <a asp-action="Details" asp-route-id="@item.StayId" class="btn btn-info">Details</a>
+                        <a asp-action="Edit" asp-route-id="@item.StayId" class="btn btn-primary">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.StayId" class="btn btn-danger">Delete</a>
+                        <a asp-action="Book" asp-route-id="@item.StayId" class="btn btn-outline-warning">Book</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+        <br />
+        <br />
+    <br />
+</div>
+</div>

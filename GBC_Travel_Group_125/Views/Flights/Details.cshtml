@@ -1,0 +1,42 @@
+﻿@model GBC_Travel_Group_125.Models.Flights
+
+@{
+    ViewData["Title"] = "Flight Details";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">@ViewData["Title"]</h2>
+    <div class="card">
+        <div class="card-header">
+            <strong>Flight:</strong> @Html.DisplayFor(model => model.FlightNumber) <span class="badge badge-pill badge-secondary">@Html.DisplayFor(model => model.Airline)</span>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Journey Details</h5>
+            <p class="card-text">
+                <strong>From:</strong> @Html.DisplayFor(model => model.FlightFrom) <br>
+                <strong>To:</strong> @Html.DisplayFor(model => model.FlightTo)
+            </p>
+            <p class="card-text">
+                <strong>Departure:</strong> @Html.DisplayFor(model => model.DepartureDateAndTime, "{0:MM/dd/yyyy HH:mm}") <br>
+                <strong>Arrival:</strong> @Html.DisplayFor(model => model.ArrivalDateAndTime, "{0:MM/dd/yyyy HH:mm}")
+            </p>
+            <p class="card-text">
+                <strong>Capacity:</strong> @Html.DisplayFor(model => model.Capacity) <br>
+                <strong>Price:</strong> $@Html.DisplayFor(model => model.Price)
+            </p>
+        </div>
+        <div class="card-footer text-muted d-flex justify-content-between">
+            <div>
+                <a asp-action="Edit" asp-route-id="@Model.FlightId" class="btn btn-primary">Edit</a>
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+            <a href="@Url.Action("Book", "Flights", new { id = Model.FlightId })" class="btn btn-success">Book this Flight</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

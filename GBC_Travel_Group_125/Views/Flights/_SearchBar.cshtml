@@ -1,0 +1,84 @@
+﻿
+<nav class="p-4">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active " id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fa-solid fa-plane"></i> Flights</button>
+        <!-- <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="fa-solid fa-hotel"></i> Stays</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"><i class="fa-solid fa-car"></i> Vehicles</button>
+        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-events" type="button" role="tab" aria-controls="nav-events" aria-selected="false"><i class="fa-solid fa-parachute-box"></i> Events</button> -->
+
+    </div>
+</nav>
+<div class="tab-content tab-size" id="nav-tabContent">
+    <form asp-controller="Flights" asp-action="Search" method="get">
+        <div class="row mb-3">
+            <div class="col col-sm-12 col-lg-2">
+                <label class="form-label">Flight Number: </label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-plane"></i></span>
+                    <input type="text" class="form-control" name="flightNumber" placeholder="Flight Number" />
+                </div>
+            </div>
+
+            <div class="col col-sm-12 col-lg-2">
+                <label class="form-label">Airline: </label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-plane"></i></span>
+                    <input type="text" class="form-control" name="airline" placeholder="Airline" />
+                </div>
+            </div>
+
+            <div class="col col-sm-12 col-lg-2">
+                <label class="form-label">From: </label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-plane-departure"></i></span>
+                    <input type="text" class="form-control" name="from" placeholder="Departure airport" />
+                </div>
+            </div>
+
+            <div class="col col-sm-12 col-lg-2">
+                <label class="form-label">To: </label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-plane-arrival"></i></span>
+                    <input type="text" class="form-control" name="to" placeholder="Arrival airport" />
+                </div>
+            </div>
+
+            <div class="col col-sm-12 col-lg-2">
+                <label class="form-label">Departure Date/Time: </label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></span>
+                    <input type="datetime-local" class="form-control" name="departureDate" />
+                </div>
+            </div>
+
+            <div class="col col-sm-12 col-lg-2">
+                <label class="form-label">Arrival Date/Time: </label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></span>
+                    <input type="datetime-local" class="form-control" name="arrivalDate" />
+                </div>
+            </div>
+
+            <div class="col col-sm-12 col-lg-2">
+                <label class="form-label">Capacity: </label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fa-solid fa-users"></i></span>
+                    <input type="number" class="form-control" name="capacity" min="1" />
+                </div>
+            </div>
+
+            <div class="col col-sm-12 col-lg-2">
+                <label class="form-label">&nbsp;</label>
+                <div class="input-group">
+                    <button type="submit" class="btn btn-primary"> <i class="fa-solid fa-search"></i> <b>SEARCH</b> </button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+
+     </div>
+</div>
+

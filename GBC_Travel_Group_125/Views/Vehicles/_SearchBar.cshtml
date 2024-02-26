@@ -1,0 +1,56 @@
+﻿
+<nav class="p-4">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="true">
+            <i class="fas fa-car"></i> Vehicles
+        </button>
+    </div>
+</nav>
+@* Updated form layout for two lines *@
+<form asp-action="Search" method="get">
+    <div class="row">
+        <div class="col-md-3 mb-3">
+            <label class="form-label">Location: </label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                <input type="text" class="form-control" placeholder="Location" name="location" aria-label="Location">
+            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+            <label class="form-label">Model: </label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-car"></i></span>
+                <input type="text" class="form-control" placeholder="Model" name="model" aria-label="Model">
+            </div>
+        </div>
+      
+        <div class="col-md-2 mb-3">
+            <label class="form-label">Min Capacity: </label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-users"></i></span>
+                <input type="number" class="form-control" placeholder="Min Capacity" name="minCapacity" min="1" aria-label="Min Capacity">
+            </div>
+        </div>
+        <div class="col-md-2 mb-3">
+            <label class="form-label">Max Capacity: </label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-users"></i></span>
+                <input type="number" class="form-control" placeholder="Max Capacity" name="maxCapacity" min="1" aria-label="Min Capacity">
+            </div>
+        </div>
+        <div class="col-md-2 mb-3">
+            <label class="form-label">Availability: </label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-check"></i></span>
+                <select class="form-select" name="availability">
+                    <option value="true">Available</option>
+                    <option value="false">Not Available</option>
+                </select>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+        </div>
+    </div>
+ 
+</form>

@@ -1,0 +1,388 @@
+@import '_content/Microsoft.AspNetCore.Components.QuickGrid/Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css';
+
+/* _content/GBC_Travel_Group_125/Views/Events/_SearchBar.cshtml.rz.scp.css */
+
+.nav-tabs[b-rhlkujler9] {
+    border: 0;
+    padding: 15px 0.7rem;
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center-align the flex items */
+    align-items: center; /* Align items vertically */
+}
+
+    .nav-tabs .nav-link[b-rhlkujler9] {
+        color: #888888; /* Default color, will be overwritten by active state */
+        margin: 0;
+        margin-right: 5px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        font-size: 14px;
+        padding: 11px 23px;
+        line-height: 1.5;
+        -webkit-transition: all 300ms ease 0s;
+        -moz-transition: all 300ms ease 0s;
+        -o-transition: all 300ms ease 0s;
+        -ms-transition: all 300ms ease 0s;
+        transition: all 300ms ease 0s;
+    }
+
+        .nav-tabs .nav-link:hover[b-rhlkujler9] {
+            background-color: transparent; /* Maintain transparent background on hover */
+            color: #444; /* Dark color on hover for contrast */
+        }
+
+        /* Updated .nav-link.active for purple background and white text */
+        .nav-tabs .nav-link.active[b-rhlkujler9] {
+            background-color: purple; /* Purple background for active state */
+            color: #FFFFFF; /* White text for active state */
+        }
+
+.nav-item .nav-link i.now-ui-icons[b-rhlkujler9] {
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+    color: inherit; /* Ensure icons inherit the same color as the text */
+}
+
+body[b-rhlkujler9] {
+    color: #2c2c2c;
+    font-size: 14px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* _content/GBC_Travel_Group_125/Views/Flights/_SearchBar.cshtml.rz.scp.css */
+
+.nav-tabs[b-wzvpe0r8kh] {
+    border: 0;
+    padding: 15px 0.7rem;
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center-align the flex items */
+    align-items: center; /* Align items vertically */
+}
+
+    .nav-tabs .nav-link[b-wzvpe0r8kh] {
+        color: #888888; /* Default color, will be overwritten by active state */
+        margin: 0;
+        margin-right: 5px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        font-size: 14px;
+        padding: 11px 23px;
+        line-height: 1.5;
+        -webkit-transition: all 300ms ease 0s;
+        -moz-transition: all 300ms ease 0s;
+        -o-transition: all 300ms ease 0s;
+        -ms-transition: all 300ms ease 0s;
+        transition: all 300ms ease 0s;
+    }
+
+        .nav-tabs .nav-link:hover[b-wzvpe0r8kh] {
+            background-color: transparent; /* Maintain transparent background on hover */
+            color: #444; /* Dark color on hover for contrast */
+        }
+
+        /* Updated .nav-link.active for purple background and white text */
+        .nav-tabs .nav-link.active[b-wzvpe0r8kh] {
+            background-color: purple; /* Purple background for active state */
+            color: #FFFFFF; /* White text for active state */
+        }
+
+.nav-item .nav-link i.now-ui-icons[b-wzvpe0r8kh] {
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+    color: inherit; /* Ensure icons inherit the same color as the text */
+}
+
+body[b-wzvpe0r8kh] {
+    color: #2c2c2c;
+    font-size: 14px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* _content/GBC_Travel_Group_125/Views/Home/Index.cshtml.rz.scp.css */
+.bg-gold[b-2yc6mpn4xl] {
+    background-color: wheat;
+}
+/* _content/GBC_Travel_Group_125/Views/Home/_SearchBar.cshtml.rz.scp.css */
+
+.nav-tabs[b-7gyfk0wk26] {
+    border: 0;
+    padding: 15px 0.7rem;
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center-align the flex items */
+    align-items: center; /* Align items vertically */
+}
+
+    .nav-tabs .nav-link[b-7gyfk0wk26] {
+        color: #888888; /* Default color, will be overwritten by active state */
+        margin: 0;
+        margin-right: 5px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        font-size: 14px;
+        padding: 11px 23px;
+        line-height: 1.5;
+        -webkit-transition: all 300ms ease 0s;
+        -moz-transition: all 300ms ease 0s;
+        -o-transition: all 300ms ease 0s;
+        -ms-transition: all 300ms ease 0s;
+        transition: all 300ms ease 0s;
+    }
+
+        .nav-tabs .nav-link:hover[b-7gyfk0wk26] {
+            background-color: transparent; /* Maintain transparent background on hover */
+            color: #444; /* Dark color on hover for contrast */
+        }
+
+        /* Updated .nav-link.active for purple background and white text */
+        .nav-tabs .nav-link.active[b-7gyfk0wk26] {
+            background-color: purple; /* Purple background for active state */
+            color: #FFFFFF; /* White text for active state */
+        }
+
+.nav-item .nav-link i.now-ui-icons[b-7gyfk0wk26] {
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+    color: inherit; /* Ensure icons inherit the same color as the text */
+}
+
+body[b-7gyfk0wk26] {
+    color: #2c2c2c;
+    font-size: 14px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* _content/GBC_Travel_Group_125/Views/Panel/_TabBar.cshtml.rz.scp.css */
+.nav-link[b-uq06of1iwn] {
+    background-color: rebeccapurple !important;
+    color: white !important;
+}
+
+.nav-lik:hover[b-uq06of1iwn], .nav-link:focus[b-uq06of1iwn], navlink[b-uq06of1iwn]::selection{
+        background-color: goldenrod !important;
+        color: black !important;
+    }
+/* _content/GBC_Travel_Group_125/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.btn-primary[b-vbzcydg8oh] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+
+.border-top[b-vbzcydg8oh] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-vbzcydg8oh] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-vbzcydg8oh] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-vbzcydg8oh] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-vbzcydg8oh] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+/* _content/GBC_Travel_Group_125/Views/Shared/_Navbar.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-kkqomq1rzo] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+  color: wheat;
+}
+
+
+a[b-kkqomq1rzo] {
+  color: white !important;
+}
+
+
+
+
+a:hover[b-kkqomq1rzo], a:focus[b-kkqomq1rzo] {
+    color:wheat;
+}
+.btn-primary[b-kkqomq1rzo] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-kkqomq1rzo], .nav-pills .show > .nav-link[b-kkqomq1rzo] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-kkqomq1rzo] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-kkqomq1rzo] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-kkqomq1rzo] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-kkqomq1rzo] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-kkqomq1rzo] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+
+.bg-purple[b-kkqomq1rzo] {
+    background-color: rebeccapurple;
+    color: white;
+}
+/* _content/GBC_Travel_Group_125/Views/Stays/_SearchBar.cshtml.rz.scp.css */
+
+.nav-tabs[b-ml76pv2pcm] {
+    border: 0;
+    padding: 15px 0.7rem;
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center-align the flex items */
+    align-items: center; /* Align items vertically */
+}
+
+    .nav-tabs .nav-link[b-ml76pv2pcm] {
+        color: #888888; /* Default color, will be overwritten by active state */
+        margin: 0;
+        margin-right: 5px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        font-size: 14px;
+        padding: 11px 23px;
+        line-height: 1.5;
+        -webkit-transition: all 300ms ease 0s;
+        -moz-transition: all 300ms ease 0s;
+        -o-transition: all 300ms ease 0s;
+        -ms-transition: all 300ms ease 0s;
+        transition: all 300ms ease 0s;
+    }
+
+        .nav-tabs .nav-link:hover[b-ml76pv2pcm] {
+            background-color: transparent; /* Maintain transparent background on hover */
+            color: #444; /* Dark color on hover for contrast */
+        }
+
+        /* Updated .nav-link.active for purple background and white text */
+        .nav-tabs .nav-link.active[b-ml76pv2pcm] {
+            background-color: purple; /* Purple background for active state */
+            color: #FFFFFF; /* White text for active state */
+        }
+
+.nav-item .nav-link i.now-ui-icons[b-ml76pv2pcm] {
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+    color: inherit; /* Ensure icons inherit the same color as the text */
+}
+
+body[b-ml76pv2pcm] {
+    color: #2c2c2c;
+    font-size: 14px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* _content/GBC_Travel_Group_125/Views/Vehicles/_SearchBar.cshtml.rz.scp.css */
+
+.nav-tabs[b-imljrymyv3] {
+    border: 0;
+    padding: 15px 0.7rem;
+    display: flex; /* Use flexbox to align items */
+    justify-content: center; /* Center-align the flex items */
+    align-items: center; /* Align items vertically */
+}
+
+    .nav-tabs .nav-link[b-imljrymyv3] {
+        color: #888888; /* Default color, will be overwritten by active state */
+        margin: 0;
+        margin-right: 5px;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: 30px;
+        font-size: 14px;
+        padding: 11px 23px;
+        line-height: 1.5;
+        -webkit-transition: all 300ms ease 0s;
+        -moz-transition: all 300ms ease 0s;
+        -o-transition: all 300ms ease 0s;
+        -ms-transition: all 300ms ease 0s;
+        transition: all 300ms ease 0s;
+    }
+
+        .nav-tabs .nav-link:hover[b-imljrymyv3] {
+            background-color: transparent; /* Maintain transparent background on hover */
+            color: #444; /* Dark color on hover for contrast */
+        }
+
+        /* Updated .nav-link.active for purple background and white text */
+        .nav-tabs .nav-link.active[b-imljrymyv3] {
+            background-color: purple; /* Purple background for active state */
+            color: #FFFFFF; /* White text for active state */
+        }
+
+.nav-item .nav-link i.now-ui-icons[b-imljrymyv3] {
+    font-size: 14px;
+    position: relative;
+    top: 1px;
+    margin-right: 3px;
+    color: inherit; /* Ensure icons inherit the same color as the text */
+}
+
+body[b-imljrymyv3] {
+    color: #2c2c2c;
+    font-size: 14px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
