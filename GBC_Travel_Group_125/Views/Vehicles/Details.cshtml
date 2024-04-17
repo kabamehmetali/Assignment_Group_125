@@ -33,13 +33,20 @@
                     <p>Phone Number: <strong>@Model.PhoneNumber</strong></p>
                 </div>
                 <div class="mt-3">
-                    @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"]?.ToString()))
+                    @if (!ViewData.ModelState.IsValid)
                     {
                         <div class="alert alert-danger" role="alert">
-                            @ViewData["ErrorMessage"]
+                            @foreach (var state in ViewData.ModelState.Values)
+                            {
+                                foreach (var error in state.Errors)
+                                {
+                                    <p>@error.ErrorMessage</p>
+                                }
+                            }
                         </div>
                     }
                 </div>
+
                 <div class=" mt-3">
                     <div class="row ">
                         @if (User.Identity.IsAuthenticated && Model.Availability)

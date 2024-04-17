@@ -266,75 +266,61 @@ namespace GBC_Travel_Group_125.Controllers
         [Authorize]
         public async Task<IActionResult> Book(int id, DateTime startDate, DateTime endDate)
         {
-            // Check vehicle existence
             var vehicle = await _context.Vehicles.FindAsync(id);
             if (vehicle == null)
             {
                 return NotFound("Vehicle not found.");
             }
 
-            // Check for past start date
             if (startDate.Date < DateTime.UtcNow.Date)
             {
-                ModelState.AddModelError("", "Booking cannot start in the past.");
-                return View("Details", vehicle); // Assume Details is the view where booking is initiated
-            }
-
-            // Check if end date is before start date
-            if (endDate <= startDate)
-            {
-                ModelState.AddModelError("", "End date must be after the start date.");
+                ModelState.AddModelError("DateError", "Booking cannot start in the past.");
                 return View("Details", vehicle);
             }
 
-            // Fetch the current user
+            if (endDate <= startDate)
+            {
+                ModelState.AddModelError("DateError", "End date must be after the start date.");
+                return View("Details", vehicle);
+            }
+
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return Challenge(); // Prompts the user to login if somehow they aren't.
+                return Challenge();
             }
 
-            // Calculate the total cost based on vehicle price and the booking duration
             decimal totalCost = (decimal)((endDate - startDate).TotalHours * vehicle.Price);
-
-            // Check if user has enough balance
             if (user.Balance < totalCost)
             {
-                ViewData["ErrorMessage"] = "Insufficient balance to complete the booking.";
+                ModelState.AddModelError("BalanceError", "Insufficient balance to complete the booking.");
                 return View("Details", vehicle);
             }
 
-            // Create and prepare the booking entry
             var booking = new Booking
             {
                 VehicleId = id,
                 UserId = user.Id,
                 StartDate = startDate,
                 EndDate = endDate,
-                BookingDate = DateTime.UtcNow, // Use UTC for consistency in date/time records
-                ServiceType = vehicle.VehicleType // Optional: storing vehicle type in booking
+                BookingDate = DateTime.UtcNow,
+                ServiceType = vehicle.VehicleType
             };
 
-            // Update user balance
             user.Balance -= totalCost;
             _context.Update(user);
-
-            // Add the booking to the context
             _context.Bookings.Add(booking);
             try
             {
-                // Save changes to the database
                 await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "Bookings"); // Redirect to the bookings index page on success
+                return RedirectToAction("Index", "Bookings");
             }
-            catch (DbUpdateException ex)
+            catch (DbUpdateException)
             {
-                // Log the exception here, for example using a logging framework or storing the error in a database
-                ModelState.AddModelError("", "An error occurred saving the booking. Please try again.");
+                ModelState.AddModelError("DbError", "An error occurred saving the booking. Please try again.");
                 return View("Details", vehicle);
             }
         }
-
 
 
 
