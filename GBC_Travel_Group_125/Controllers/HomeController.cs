@@ -18,11 +18,16 @@ namespace GBC_Travel_Group_125.Controllers
             return View();
         }
 
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        [HttpGet]
+        public IActionResult VehicleSearch(string location, bool? availability, int? minCapacity, int? maxCapacity, string model, int page = 1)
+        {
+            // Redirect to the Search action in VehiclesController with the search parameters
+            return RedirectToAction("Search", "Vehicles", new { location, availability, minCapacity, maxCapacity, model, page });
         }
     }
 }

@@ -3,16 +3,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using GBC_Travel_Group_125.Models; 
 using Microsoft.AspNetCore.Http;
 using System.IO;
 using GBC_Travel_Group_125.Data;
+using GBC_Travel_Group_125.Models;
 
 namespace GBC_Travel_Group_125.Controllers
 {
     public class FlightsController : Controller
     {
         private readonly ApplicationDbContext _context; // Replace 'YourDbContext' with your actual DbContext class name
+
 
         public FlightsController(ApplicationDbContext context)
         {
@@ -227,35 +228,35 @@ namespace GBC_Travel_Group_125.Controllers
 
 
 
-        [HttpPost, ActionName("ConfirmBooking")]
-         [ValidateAntiForgeryToken]
-         public async Task<IActionResult> ConfirmBookingPost(int id)
+       /* [HttpPost, ActionName("ConfirmBooking")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ConfirmBookingPost(int id)
+        {
+            var flight = await _context.Flights.FindAsync(id);
+
+            if (flight == null)
             {
-                var flight = await _context.Flights.FindAsync(id);
-
-                if (flight == null)
-                {
-                    return NotFound();
-                }
-
-                // Assuming you have a Booking model
-                var booking = new Booking
-                {
-                    FlightNumber = flight.FlightNumber, // Assuming you want to store flight information in the booking
-                    BookingDate = DateTime.Now, // You can adjust this based on your requirements
-                    BookingType = 1, // Assuming a default booking type
-                    VehicleId = id // Assuming FlightId maps to VehicleId in Booking
-                };
-
-                _context.Add(booking);
-                await _context.SaveChangesAsync();
-
-                return RedirectToAction(nameof(Index));
+                return NotFound();
             }
 
+            // Assuming you have a Booking model
+            var booking = new Booking
+            {
+                FlightNumber = flight.FlightNumber, // Assuming you want to store flight information in the booking
+                BookingDate = DateTime.Now, // You can adjust this based on your requirements
+                BookingType = 1, // Assuming a default booking type
+                VehicleId = id // Assuming FlightId maps to VehicleId in Booking
+            };
 
+            _context.Add(booking);
+            await _context.SaveChangesAsync();
 
-
+            return RedirectToAction(nameof(Index));
         }
-    } 
+*/
+
+
+
+    }
+}
 

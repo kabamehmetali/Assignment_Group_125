@@ -2,31 +2,35 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GBC_Travel_Group_125.Models;
-
-// Example Booking model (adjust based on your actual model)
-public class Booking
+namespace GBC_Travel_Group_125.Models
 {
-    public string FlightNumber { get; set; }
-
-
+    public class Booking
+    {
         [Key]
         public int BookingId { get; set; }
+
+        [Required]
+        public string UserId { get; set; }
+
+        [Required]
+        public int ServiceId { get; set; }
+        public string ServiceType { get; set; }
+
+        [ForeignKey("UserId")]
+        public ApplicationUser User { get; set; }
 
         [Required]
         public DateTime BookingDate { get; set; }
 
         [Required]
-        public int BookingType { get; set; }
-      
-        public int FlightId { get; set; }  // Foreign key to Flight
-        public virtual Flights Flight { get; set; }  // Navigation property
+        public DateTime StartDate { get; set; }
 
-    // Assuming VehicleId as a foreign key
-    [Required]
-        public int VehicleId { get; set; }
+        [Required]
+        public DateTime EndDate { get; set; }
+
+
         [ForeignKey("VehicleId")]
-        public virtual Vehicles Vehicle { get; set; }
-
+        public int VehicleId { get; set; }
+        public Vehicles Vehicle { get; set; }  // Navigation property for vehicle
     }
-
+}

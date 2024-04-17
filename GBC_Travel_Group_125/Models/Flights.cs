@@ -13,10 +13,10 @@ namespace GBC_Travel_Group_125.Models
         public string? Airline { get; set; }
 
         [Required]
-        public string? FlightFrom  { get; set; }
+        public string? FlightFrom { get; set; }
 
         [Required]
-        public string? FlightTo { get; set;}
+        public string? FlightTo { get; set; }
 
         [Required]
         public DateTime DepartureDateAndTime { get; set; }

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<GBC_Travel_Group_125.Models.Booking>
+
+<div class="container"><h2 class="text-center mt-3">My Bookings</h2></div>
+
+<div class="container mt-4">
+    @if (Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Vehicle Image</th>
+                        <th>Vehicle Name</th>
+                        <th>Model</th>
+                        <th>Booking ID</th>
+                        <th>Service Type</th>
+                        <th>Booking Date</th>
+                        <th>Start Date</th>
+                        <th>End Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var booking in Model)
+                    {
+                        <tr class="clickable-row" data-href="@Url.Action("Details", "Vehicles", new { id = booking.VehicleId })" style="cursor: pointer;">
+                            <td class="align-middle">
+                                @if (booking.Vehicle.VehicleImage != null)
+                                {
+                                    <img src="@Url.Content(booking.Vehicle.VehicleImage)" alt="Vehicle Image" class="img-fluid" style="width: 100px; height: auto;">
+                                }
+                                else
+                                {
+                                    <img src="path/to/default/image" alt="Default Image" class="img-fluid" style="width: 100px; height: auto;">
+                                }
+                            </td>
+                            <td class="align-middle">@booking.Vehicle.VehicleName</td>
+                            <td class="align-middle">@booking.Vehicle.Model</td>
+                            <td class="align-middle">@booking.BookingId</td>
+                            <td class="align-middle">@booking.ServiceType</td>
+                            <td class="align-middle">@booking.BookingDate.ToString("yyyy-MM-dd HH:mm")</td>
+                            <td class="align-middle">@booking.StartDate.ToString("yyyy-MM-dd")</td>
+                            <td class="align-middle">@booking.EndDate.ToString("yyyy-MM-dd")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info" role="alert">
+            There are no available bookings.
+        </div>
+        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Go to Home Page</a>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $(".clickable-row").click(function () {
+                window.location = $(this).data("href");
+            });
+        });
+    </script>
+}

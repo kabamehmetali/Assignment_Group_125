@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kabam\\OneDrive\\Documents\\GitHub\\COMP2139-KABA\\GBC_Travel_Group_125\\GBC_Travel_Group_125\\GBC_Travel_Group_125.csproj": {}
+    "C:\\Users\\kabam\\OneDrive\\Desktop\\Assignment_Group_125-main\\GBC_Travel_Group_125\\GBC_Travel_Group_125.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kabam\\OneDrive\\Documents\\GitHub\\COMP2139-KABA\\GBC_Travel_Group_125\\GBC_Travel_Group_125\\GBC_Travel_Group_125.csproj": {
+    "C:\\Users\\kabam\\OneDrive\\Desktop\\Assignment_Group_125-main\\GBC_Travel_Group_125\\GBC_Travel_Group_125.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kabam\\OneDrive\\Documents\\GitHub\\COMP2139-KABA\\GBC_Travel_Group_125\\GBC_Travel_Group_125\\GBC_Travel_Group_125.csproj",
+        "projectUniqueName": "C:\\Users\\kabam\\OneDrive\\Desktop\\Assignment_Group_125-main\\GBC_Travel_Group_125\\GBC_Travel_Group_125.csproj",
         "projectName": "GBC_Travel_Group_125",
-        "projectPath": "C:\\Users\\kabam\\OneDrive\\Documents\\GitHub\\COMP2139-KABA\\GBC_Travel_Group_125\\GBC_Travel_Group_125\\GBC_Travel_Group_125.csproj",
+        "projectPath": "C:\\Users\\kabam\\OneDrive\\Desktop\\Assignment_Group_125-main\\GBC_Travel_Group_125\\GBC_Travel_Group_125.csproj",
         "packagesPath": "C:\\Users\\kabam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kabam\\OneDrive\\Documents\\GitHub\\COMP2139-KABA\\GBC_Travel_Group_125\\GBC_Travel_Group_125\\obj\\",
+        "outputPath": "C:\\Users\\kabam\\OneDrive\\Desktop\\Assignment_Group_125-main\\GBC_Travel_Group_125\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -52,31 +52,67 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.QuickGrid": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.4, )"
             },
             "Microsoft.Extensions.Hosting.Abstractions": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.NETCore.Platforms": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "SendGrid": {
+              "target": "Package",
+              "version": "[9.29.3, )"
             },
             "System.IO.FileSystem": {
               "target": "Package",
@@ -102,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

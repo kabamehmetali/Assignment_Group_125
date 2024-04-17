@@ -10,48 +10,39 @@
         @Html.Partial("_SearchBar")
     </div>
 
+
 <div class="container mt-3">
     <h2>@ViewData["Title"]</h2>
-
     <p>
         <a asp-action="Create" class="btn btn-primary">Create New</a>
     </p>
-       
-    <table class="table">
-        <thead>
-            <tr>
-                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().FlightNumber)</th>
-                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Airline)</th>
-                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().FlightFrom)</th>
-                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().FlightTo)</th>
-                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().DepartureDateAndTime)</th>
-                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().ArrivalDateAndTime)</th>
-                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Capacity)</th>
-                <th>@Html.DisplayNameFor(model => model.FirstOrDefault().Price)</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@Html.DisplayFor(modelItem => item.FlightNumber)</td>
-                    <td>@Html.DisplayFor(modelItem => item.Airline)</td>
-                    <td>@Html.DisplayFor(modelItem => item.FlightFrom)</td>
-                    <td>@Html.DisplayFor(modelItem => item.FlightTo)</td>
-                    <td>@Html.DisplayFor(modelItem => item.DepartureDateAndTime, "{0:g}")</td> <!-- General date-time format -->
-                    <td>@Html.DisplayFor(modelItem => item.ArrivalDateAndTime, "{0:g}")</td>
-                    <td>@Html.DisplayFor(modelItem => item.Capacity)</td>
-                    <td>@Html.DisplayFor(modelItem => item.Price, "{0:C}")</td> <!-- Currency format -->
-                    <td>
-                        <a asp-action="Details" asp-route-id="@item.FlightId" class="btn btn-outline-info">Details</a>
-                        <a asp-action="Edit" asp-route-id="@item.FlightId" class="btn btn-outline-secondary">Edit</a>
-                        <a asp-action="Delete" asp-route-id="@item.FlightId" class="btn btn-outline-danger">Delete</a>
-                        <a asp-action="Book" asp-route-id="@item.FlightId" class="btn btn-outline-warning">Book</a>
-
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <div class="card-header bg-primary text-white">
+                        <i class="fas fa-plane-departure"></i> @Html.DisplayFor(modelItem => item.FlightNumber)
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.Airline)</h5>
+                        <p class="card-text">
+                            From: @Html.DisplayFor(modelItem => item.FlightFrom) <br>
+                            To: @Html.DisplayFor(modelItem => item.FlightTo) <br>
+                            Depart: @Html.DisplayFor(modelItem => item.DepartureDateAndTime, "{0:g}") <br>
+                            Arrive: @Html.DisplayFor(modelItem => item.ArrivalDateAndTime, "{0:g}") <br>
+                            Capacity: @Html.DisplayFor(modelItem => item.Capacity) <br>
+                            Price: @Html.DisplayFor(modelItem => item.Price, "{0:C}")
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a asp-action="Details" asp-route-id="@item.FlightId" class="btn btn-info">Details</a>
+                        <a asp-action="Edit" asp-route-id="@item.FlightId" class="btn btn-secondary">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.FlightId" class="btn btn-danger">Delete</a>
+                        <a asp-action="Book" asp-route-id="@item.FlightId" class="btn btn-warning">Book</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>

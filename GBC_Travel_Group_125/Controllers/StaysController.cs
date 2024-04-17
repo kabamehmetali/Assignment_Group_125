@@ -204,7 +204,7 @@ namespace GBC_Travel_Group_125.Controllers
 
             return View(stay);
         }
-        [HttpPost, ActionName("ConfirmBookingPost")]
+       /* [HttpPost, ActionName("ConfirmBookingPost")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ConfirmBookingPost(int id)
         {
@@ -229,7 +229,7 @@ namespace GBC_Travel_Group_125.Controllers
 
             return RedirectToAction(nameof(Index));
         }
-
+*/
 
 
 

@@ -165,6 +165,38 @@ namespace GBC_Travel_Group_125.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // GET: Events/Search
+        public async Task<IActionResult> Search(string location, DateTime? date, int? tickets)
+        {
+            // Start with all events
+            var query = _context.Event.AsQueryable();
+
+            // Filter by location if provided
+            if (!string.IsNullOrEmpty(location))
+            {
+                query = query.Where(e => e.Location.Contains(location));
+            }
+
+            // Filter by date if provided
+            if (date.HasValue)
+            {
+                query = query.Where(e => e.DateStart <= date.Value && e.DateEnd >= date.Value);
+            }
+
+            // Filter by the minimum number of available tickets if provided
+            if (tickets.HasValue && tickets.Value > 0)
+            {
+                query = query.Where(e => e.Capacity >= tickets.Value);
+            }
+
+            var events = await query.ToListAsync();
+
+            // Return a view (ensure you have a corresponding view named 'SearchResults' or change the view name as necessary)
+            return View("_searchBar", events);
+        }
+
+
+
         private bool EventsExists(int id)
         {
             return _context.Event.Any(e => e.EventId == id);

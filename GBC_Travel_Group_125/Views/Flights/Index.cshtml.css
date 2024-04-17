@@ -1,0 +1,18 @@
+﻿.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+    .card:hover {
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+.card-header {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: mediumpurple;
+}
+
+.btn-info, .btn-secondary, .btn-danger, .btn-warning {
+    margin-right: 4px;
+}

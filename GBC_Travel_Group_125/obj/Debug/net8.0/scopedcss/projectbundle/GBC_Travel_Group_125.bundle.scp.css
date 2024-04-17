@@ -53,6 +53,25 @@ body[b-rhlkujler9] {
     -webkit-font-smoothing: antialiased;
 }
 
+/* _content/GBC_Travel_Group_125/Views/Flights/Index.cshtml.rz.scp.css */
+.card[b-g2zclrb1nj] {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+    .card:hover[b-g2zclrb1nj] {
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+.card-header[b-g2zclrb1nj] {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: mediumpurple;
+}
+
+.btn-info[b-g2zclrb1nj], .btn-secondary[b-g2zclrb1nj], .btn-danger[b-g2zclrb1nj], .btn-warning[b-g2zclrb1nj] {
+    margin-right: 4px;
+}
 /* _content/GBC_Travel_Group_125/Views/Flights/_SearchBar.cshtml.rz.scp.css */
 
 .nav-tabs[b-wzvpe0r8kh] {

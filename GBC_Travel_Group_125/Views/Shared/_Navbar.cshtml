@@ -1,18 +1,60 @@
-﻿<nav class="navbar navbar-expand-lg  bg-purple container-fluid ">
+﻿@using Microsoft.AspNetCore.Identity
+@using GBC_Travel_Group_125.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+<nav class="navbar navbar-expand-lg bg-purple container-fluid">
     <a class="navbar-brand" asp-controller="Home" asp-action="Index">P&A Travel</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-            <a class="nav-link active" asp-controller="Home" asp-action="Index" >Home</a>
-              <a class="nav-link " asp-controller="Flights" asp-action="Index">Flights</a>
-              <a class="nav-link" asp-controller="Stays" asp-action="Index">Stays</a>
-             <a class="nav-link" asp-controller="Vehicles" asp-action="Index">Vehicles</a> 
-            <a class="nav-link" asp-controller="Events" asp-action="Index">Events</a> 
-            <!-- <a class="nav-link active" asp-controller="Home" asp-action="Support">Support</a>-->
-            <a class="nav-link" asp-controller="Login" asp-action="Index" >Login</a>
+            <a class="nav-link active" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-sm fa-home"></i> Home</a>
+            <a class="nav-link" asp-controller="Flights" asp-action="Index"><i class="fa-solid fa-sm fa-plane"></i> Flights</a>
+            <a class="nav-link" asp-controller="Stays" asp-action="Index"><i class="fa-solid fa-sm fa-hotel"></i> Stays</a>
+            <a class="nav-link" asp-controller="Vehicles" asp-action="Index"><i class="fa-solid fa-sm fa-car"></i> Vehicles</a>
+            <a class="nav-link" asp-controller="Events" asp-action="Index"><i class="fa-solid fa-sm fa-parachute-box"></i> Events</a>
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        @if (UserManager.GetUserAsync(User).Result.ProfilePicture != null)
+                        {
+                            <img style="width: 25px; height: 25px; object-fit: cover; border-radius: 15px; border-color:white; vertical-align: middle; margin-right: 5px;" src="data:image/*;base64,@(Convert.ToBase64String(UserManager.GetUserAsync(User).Result.ProfilePicture))" />
+                        }
+                        else
+                        {
+                            <i class="fa-solid fa-circle-user"></i>
+                        }
+                        Profile
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                       
+                        <li>
+                            <span class="dropdown-item text-success"><i class="fa-solid fa-sm fa-wallet"></i> Balance: $@UserManager.GetUserAsync(User).Result.Balance.ToString("N2")</span>
+                        </li>
+                        <li><a class="dropdown-item" asp-area="Identity" asp-page="/Account/Manage/Index"><i class="fa-solid fa-sm fa-user-gear"></i> Manage Account</a></li>
+                        <li>
+                            <a class="dropdown-item" asp-controller="Bookings" asp-action="Index"><i class="fa-solid fa-sm fa-book-open"></i> My Bookings</a>
+                        </li>
+                        <li>
+                            <form asp-area="Identity" asp-page="/Account/Logout" method="post">
+                                <button type="submit" class="dropdown-item"><i class="fa-solid fa-sm fa-arrow-right-from-bracket"></i> Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            }
+            else
+            {
+                <li class="nav-item">
+                    <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Login"><i class="fa fa-sign-in-alt"></i> Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" asp-area="Identity" asp-page="/Account/Register"><i class="fa fa-user-plus"></i> Register</a>
+                </li>
+            }
         </div>
     </div>
-    
 </nav>

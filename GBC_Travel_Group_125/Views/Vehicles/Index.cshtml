@@ -13,7 +13,10 @@
 
     <div class="container mt-3">
         <h2>@ViewData["Title"]</h2>
-        <a asp-action="Create" class="btn btn-primary">Add New Vehicle</a>
+        @if (User.IsInRole("Admin"))
+        {
+            <a asp-action="Create" class="btn btn-primary">Add New Vehicle</a>
+        }
         <br />
         @if (!Model.Any())
         {
@@ -26,7 +29,10 @@
             <div class="alert alert-info" role="alert">
                 No vehicles Found!
                 <br /><br />
-                <a class="btn btn-primary" asp-controller="Vehicles" asp-action="Create">Add a Vehicle</a>
+                @if (User.IsInRole("Admin"))
+                {
+                    <a asp-action="Create" class="btn btn-primary">Add New Vehicle</a>
+                }
             </div>
             <br /><br />
             <br />
@@ -107,9 +113,11 @@
                             <a asp-action="Details" asp-route-id="@vehicle.VehicleId" class="btn btn-warning">More Details</a>
                             @if (vehicle.Availability)
                             {
-                                <a href="@Url.Action("Book", "Vehicles", new { id = vehicle.VehicleId })" class="btn btn-primary">Book</a>
+                                <!-- Change the Book button to lead to the Details page instead of booking directly -->
+                                <a asp-action="Details" asp-route-id="@vehicle.VehicleId" class="btn btn-primary">Book</a>
                             }
                         </div>
+
                     </div>
                 </div>
             }
