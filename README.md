@@ -43,6 +43,12 @@ After launching the **GBC Travel** application, you can begin using the travel b
 ## License
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for full license details.
 
+## Screenshots
+![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](screenshots/screenshot2.png)
+
+
+
 ## Badges
 - ![License](https://img.shields.io/badge/License-MIT-green.svg) 
 
